@@ -6,10 +6,12 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        margin-left: 50px;
-        width: 55vw;
+        margin-left: 20px;
+        width: 70vw;
+        column-gap: 30px;
     }
     .first-section .logo {
+        display: flex;
         width: 150px;
         height: 40px;
     }
@@ -20,8 +22,8 @@
     
     .first-section .search-section {
         position: relative;
-        width: 200px;
-        height: 30px;
+        width: 150px;
+        height: 25px;
         background: rgba(255, 255, 255, 0.5);
         border: 1px solid #FFFFFF;
         border-radius: 20px;
@@ -88,7 +90,7 @@
         top: 280px;
         z-index: 2;
         color: white;
-        
+        right: -10px;     
         
     }
     .add-section .drop-elements ul > li > ul {
@@ -118,17 +120,15 @@
 
 /* For Ipads, Tablets */
 @media (min-width:481px) and (max-width:768px){
-    .first-section {
-        width: 30vw;
-    }
 
-        /* Navbar section */
+   /* Navbar section */
         .first-section {
             display: flex;
             align-items: center;
             flex-direction: row;
             margin-left: 50px;
-            width: 55vw;
+            width: 70vw;
+            column-gap: 40px;
         }
         .first-section .logo {
             width: 150px;
@@ -239,6 +239,37 @@
 
 /* For small screens and laptops */
 @media (min-width:769px) and (max-width:1024px){
+    .first-section {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 50px;
+        width: 80vw ;
+        column-gap: 40px;
+    }
+    .first-section .logo {
+        width: 150px;
+        height: 40px;
+    }
+    .first-section .logo img {
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .first-section .search-section {
+        position: relative;
+        width: 300px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        margin-left: auto!important;
+    }
+    .search-section i {
+        color: white;
+        position: absolute;
+        right: 15px;
+    }
     /* Navbar section */
     .second-section {
         top: 60px;
