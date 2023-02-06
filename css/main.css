@@ -14,12 +14,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.navbar {
+.local-navbar {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: fixed!important;
     top: 0;
-    width: auto;
+    width: 100vw;
     height: 60px; 
     background: rgba(0, 124, 217, 0.6);
     border-bottom: 2px solid #8AD5F2;
@@ -121,9 +121,7 @@
     margin-right: 20px;
 }
 
-.home-content {
-    margin-top: 150px;
-}
+
 .home-content .btn-diving {
     display: flex;
     text-decoration: none;
@@ -138,12 +136,100 @@
     justify-content: center;
 }
 
-
-
-
+.chat-service {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #00A3DC;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+    right: 40px;
+    bottom: 30px;
+    display: flex;
+}
+.chat-service button {
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+.chat-service button i{
+    color: white;
+    font-size: 22px;
+}
 .services {
     height: 100vh;
     background-image: url(../images/services-products.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+}
+
+.services .container > div:nth-child(1) > .col {
+    margin-top: 80px;
+}
+.services .container > div:nth-child(2) > .col {
+    margin-top: 10px;
+}
+.services .container > div > div > h1 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 79px;
+    text-align: center;
+    color: white;
+}
+
+.services-content {
+    background: rgba(255, 255, 255, 0.8);
+    border-width: 8px 0px;
+    border-style: solid;
+    border-color: #0B85C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.services-content > div > div > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.services-content > div > div:nth-child(2) > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.services-content > div > div > ul > li {
+    font-size: 28px;
+    color: #085983;
+}
+.services-content > div {
+    padding: 30px 15px;
+}
+
+.services .container > div:nth-child(3) > div:nth-child(1) > h4 {
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 38px;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 4px 10px #000000;
+}
+
+.services .container > div:nth-child(3) > div:nth-child(2) > a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #00A3DC;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin:auto;
 }

@@ -42,8 +42,8 @@
         flex-direction: column;
         margin-right: 0;
         background-color: #0D93DF;
-        width: 50vw;
-        height: 90vh;
+        width: 100vw;
+        height: 100vh;
         overflow: hidden;
         overflow-y: scroll;
         right: 0;
@@ -70,6 +70,7 @@
         width: 100%;
         justify-content: space-between;
         padding: 0px 20px;
+        z-index: 50;
     }
     .line-menu {
         display: none;
@@ -82,16 +83,14 @@
         text-decoration: none;
         color: white;
     }
-
     .add-section .drop-elements > ul{
         background-color:  #0D93DF;
         border-radius: 0;
         border: none;
         top: 280px;
         z-index: 2;
-        color: white;
-        right: -10px;     
-        
+        color: white;  
+        right: 75px;       
     }
     .add-section .drop-elements ul > li > ul {
         background-color: #0D93DF;
@@ -116,9 +115,6 @@
         background-color: white;
     }
     /* home section : content */
-    .home-content {
-        margin-top: 170px;
-    }
     .home-content > div> div:nth-child(1) h1 {
         font-size: 36px!important;
     }
@@ -133,6 +129,35 @@
         font-size: 18px;
         margin-top: 40px;
     }
+    .services .container > div:nth-child(1) > .col {
+        margin-top: 140px;
+    }
+    .services .container > div > div > h1 {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px!important;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+    }
+    .services .container > div:nth-child(3) {
+        margin-top: 80px!important;
+    }
+    .services-content > div > div > ul > li {
+        font-size: 22px;
+    }
+
+    .services .container > div:nth-child(3) > div:nth-child(1) > h4 {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px!important;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 10px #000000;
+        }
 
 }
 
@@ -254,9 +279,7 @@
         }
 
         /* home section : content */
-        .home-content {
-            margin-top: 160px;
-        }
+
         .home-content > div> div:nth-child(1) h1 {
             font-size: 55px!important;
         }
@@ -267,6 +290,21 @@
         .home-content > div > div:nth-child(3) a {
             width: 260px;
             height: 50px;
+            font-size: 24px;
+        }
+        .services .container > div > div > h1 {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+        }
+        .services .container > div:nth-child(3) {
+            margin-top: 120px!important;
+        }
+        .services-content > div > div > ul > li {
             font-size: 24px;
         }
 
@@ -390,6 +428,18 @@
     /* home section : content */
     .home-content > div > :nth-child(1) h1 {
         font-size: 75px!important;
+    }
+    .services .container > div > div > h1 {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 60px;
+        text-align: center;
+        color: white;
+    }
+    .services .container > div:nth-child(3) {
+        margin-top: 140px!important;
     }
     
 }
