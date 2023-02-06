@@ -9,8 +9,8 @@
         flex-direction: column;
         margin-right: 0;
         background-color: #0D93DF;
-        width: 25vw;
-        height: auto;
+        width: 50vw;
+        height: 100vh;
         overflow: hidden;
         overflow-y: scroll;
         right: 0;
