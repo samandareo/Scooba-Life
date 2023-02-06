@@ -116,17 +116,22 @@
         background-color: white;
     }
     /* home section : content */
+    .home-content {
+        margin-top: 170px;
+    }
     .home-content > div> div:nth-child(1) h1 {
         font-size: 36px!important;
     }
     .home-content > div > div:nth-child(2) h6 {
         font-size: 20px!important;
         line-height: 24px!important;
+        margin-top: 10px;
     }
     .home-content > div > div:nth-child(3) a {
         width: 220px;
         height: 40px;
         font-size: 18px;
+        margin-top: 40px;
     }
 
 }
@@ -249,6 +254,9 @@
         }
 
         /* home section : content */
+        .home-content {
+            margin-top: 160px;
+        }
         .home-content > div> div:nth-child(1) h1 {
             font-size: 55px!important;
         }
