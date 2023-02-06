@@ -2,6 +2,37 @@
 @media (min-width:320px) and (max-width:480px){
 
     /* Navbar section */
+    .first-section {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 50px;
+        width: 55vw;
+    }
+    .first-section .logo {
+        width: 150px;
+        height: 40px;
+    }
+    .first-section .logo img {
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .first-section .search-section {
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        margin-left: auto!important;
+    }
+    .search-section i {
+        color: white;
+        position: absolute;
+        right: 15px;
+    }
+
     .second-section {
         top: 60px;
         position: absolute;
@@ -10,7 +41,7 @@
         margin-right: 0;
         background-color: #0D93DF;
         width: 50vw;
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         overflow-y: scroll;
         right: 0;
@@ -35,7 +66,8 @@
         top: 5px;
         border-bottom: 1px solid white;
         width: 100%;
-        column-gap: 150px
+        justify-content: space-between;
+        padding: 0px 20px;
     }
     .line-menu {
         display: none;
@@ -43,7 +75,6 @@
     
     .add-section div {
         position: relative;
-        left: 10px;
     }
     .add-section div a {
         text-decoration: none;
@@ -57,7 +88,7 @@
         top: 280px;
         z-index: 2;
         color: white;
-        right: 8px;
+        
         
     }
     .add-section .drop-elements ul > li > ul {
@@ -91,87 +122,119 @@
         width: 30vw;
     }
 
-    /* Navbar section */
-    .second-section {
-        top: 60px;
-        position: absolute;
-        display: none;
-        flex-direction: column;
-        margin-right: 0;
-        background-color: #0D93DF;
-        width: 25vw;
-        height: auto;
-        overflow: hidden;
-        overflow-y: scroll;
-        right: 0;
-    }
-    
-    .second-section .menu-section {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        margin-top: 30px;
-        padding: 25px 5px;
-    }
-    .menu-section a {
-        text-decoration: none;
-        color: white;
-        border-bottom: 1px solid white;
-        text-align: center;
-        padding: 5px 60px;
-    }
-    .add-section {
-        position: absolute;
-        top: 5px;
-        border-bottom: 1px solid white;
-        width: 100%;
-        column-gap: 150px
-    }
-    .line-menu {
-        display: none;
-    }
-    
-    .add-section div {
-        position: relative;
-        left: 10px;
-    }
-    .add-section div a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .add-section .drop-elements > ul{
-        background-color:  #0D93DF;
-        border-radius: 0;
-        border: none;
-        top: 280px;
-        z-index: 2;
-        color: white;
-        right: 8px;
+        /* Navbar section */
+        .first-section {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-left: 50px;
+            width: 55vw;
+        }
+        .first-section .logo {
+            width: 150px;
+            height: 40px;
+        }
+        .first-section .logo img {
+            width: 100%;
+            object-fit: contain;
+        }
         
-    }
-    .add-section .drop-elements ul > li > ul {
-        background-color: #0D93DF;
-        border: none;
-        border-radius: 0;
-    }
-    .add-section .drop-elements ul > li > ul {
-        background-color: #0D93DF;
-        border: none;
-        border-radius: 0;
-    }
-
+        .first-section .search-section {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #FFFFFF;
+            border-radius: 20px;
+            margin-left: auto!important;
+        }
+        .search-section i {
+            color: white;
+            position: absolute;
+            right: 15px;
+        }
     
-    .hamburger-menu {
-        display: block;
+        .second-section {
+            top: 60px;
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            margin-right: 0;
+            background-color: #0D93DF;
+            width: 40vw;
+            height: 90vh;
+            overflow: hidden;
+            overflow-y: scroll;
+            right: 0;
+        }
+        
+        .second-section .menu-section {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 30px;
+            padding: 25px 5px;
+        }
+        .menu-section a {
+            text-decoration: none;
+            color: white;
+            border-bottom: 1px solid white;
+            text-align: center;
+            padding: 5px 60px;
+        }
+        .add-section {
+            position: absolute;
+            top: 5px;
+            border-bottom: 1px solid white;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+        .line-menu {
+            display: none;
+        }
+        
+        .add-section div {
+            position: relative;
+        }
+        .add-section div a {
+            text-decoration: none;
+            color: white;
+        }
+    
+        .add-section .drop-elements > ul{
+            background-color:  #0D93DF;
+            border-radius: 0;
+            border: none;
+            top: 280px;
+            z-index: 2;
+            color: white;
+            right: 10px;
+            
+        }
+        .add-section .drop-elements ul > li > ul {
+            background-color: #0D93DF;
+            border: none;
+            border-radius: 0;
+        }
+        .add-section .drop-elements ul > li > ul {
+            background-color: #0D93DF;
+            border: none;
+            border-radius: 0;
+        }
+    
+        
+        .hamburger-menu {
+            display: block;
+    
+        }
+        .nav-text-color {
+            color: white!important;
+        }
+        .dropdown-divider {
+            background-color: white;
+        }
 
-    }
-    .nav-text-color {
-        color: white!important;
-    }
-    .dropdown-divider {
-        background-color: white;
-    }
 }
 
 /* For small screens and laptops */
