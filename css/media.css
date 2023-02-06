@@ -20,7 +20,7 @@
         margin-right: 0;
         background-color: #0D93DF;
         width: 25vw;
-        height: 50vh;
+        height: auto;
         overflow: hidden;
         overflow-y: scroll;
         right: 0;
