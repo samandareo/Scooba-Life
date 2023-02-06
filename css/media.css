@@ -1,0 +1,103 @@
+/* For mobile devices */
+@media (min-width:320px) and (max-width:480px){
+
+}
+
+/* For Ipads, Tablets */
+@media (min-width:481px) and (max-width:768px){
+    .first-section {
+        width: 30vw;
+    }
+}
+
+/* For small screens and laptops */
+@media (min-width:769px) and (max-width:1024px){
+    .second-section {
+        top: 60px;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        margin-right: 0;
+        background-color: #0D93DF;
+        width: 25vw;
+        height: 50vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        right: 0;
+    }
+    
+    .second-section .menu-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 30px;
+        padding: 25px 5px;
+    }
+    .menu-section a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid white;
+        text-align: center;
+        padding: 5px 60px;
+    }
+    .add-section {
+        position: absolute;
+        top: 5px;
+        border-bottom: 1px solid white;
+        width: 100%;
+        column-gap: 150px
+    }
+    .line-menu {
+        display: none;
+    }
+    
+    .add-section div {
+        position: relative;
+        left: 10px;
+    }
+    .add-section div a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .add-section .drop-elements > ul{
+        background-color:  #0D93DF;
+        border-radius: 0;
+        border: none;
+        top: 280px;
+        z-index: 2;
+        color: white;
+        right: 10px;
+        
+    }
+    .add-section .drop-elements ul > li > ul {
+        background-color: #0D93DF;
+        border: none;
+        border-radius: 0;
+    }
+    .add-section .drop-elements ul > li > ul {
+        background-color: #0D93DF;
+        border: none;
+        border-radius: 0;
+    }
+
+    
+    .hamburger-menu {
+        display: block;
+
+    }
+    .nav-text-color {
+        color: white!important;
+    }
+    .dropdown-divider {
+        background-color: white;
+    }
+    
+}
+
+/* For desktop, large screens */
+@media (min-width:1025px) and (max-width:1200px){
+    .first-section {
+        width: 40vw;
+    }
+}
