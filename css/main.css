@@ -237,7 +237,7 @@ text-shadow: 0px 4px 10px #000000;
 
     /* for advices */
 .advices {
-    height: 100vh;
+    height: auto;
     background-image: url(../images/advices.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -246,14 +246,12 @@ text-shadow: 0px 4px 10px #000000;
 
 .advices > div >  div > .label-content {
     width: 90vw;
-    height: 80vh;
+    height: auto;
     background: rgba(255, 255, 255, 0.8);
     margin: auto;
-}
-
-.advices > div > div > .label-content {
     margin-top: 100px;
     padding: 40px;
+    margin-bottom: 40px;
 }
 
 .label-content > div > .advice-photo {
@@ -269,5 +267,13 @@ text-shadow: 0px 4px 10px #000000;
 }
 
 .label-content > div:nth-child(2) p{
-    font-size: 20px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.label-content > div:nth-child(2) h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #01003D;
 }
