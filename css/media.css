@@ -164,16 +164,17 @@
         }
         .label-content > div > .advice-photo {
             float:none;
-            width: 350px;
-            height: 150px;
-            padding: 5px;
+            width: 250px;
+            height: 100px;
             margin: auto!important;
-            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
         }
         
         .advice-photo img {
-            width: 100%;
+            width: 90%;
             object-fit: cover;
+            margin: auto!important;
         }
     
         .label-content > div:nth-child(2) h5{
@@ -181,12 +182,11 @@
             font-weight: 500;
             font-size: 20px;
             color: #01003D;
+            margin-top: 40px ;
         }
         .advices > div >  div > .label-content {
             display: flex;
             flex-direction: column;
-
-
             padding: 20px;
         }
 
@@ -347,12 +347,12 @@
         .label-content > div > .advice-photo {
             float: left;
             width: 250px;
-            height: 100px;
-            padding: 5px;
+            height: 130px;
+            padding: 0!important;
         }
         
         .advice-photo img {
-            width: 70%;
+            width: 90%;
             object-fit: cover;
         }
     

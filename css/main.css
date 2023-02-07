@@ -269,6 +269,7 @@ text-shadow: 0px 4px 10px #000000;
 .label-content > div:nth-child(2) p{
     font-size: 18px;
     padding: 5px;
+    text-align: justify;
 }
 
 .label-content > div:nth-child(2) h5{
