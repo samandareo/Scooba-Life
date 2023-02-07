@@ -714,7 +714,7 @@ line-height: 23px;
 
 /* SIGN UP */
 .signup {
-    height: 100vh;
+    height: auto;
     background-image: url(../images/register.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -723,7 +723,7 @@ line-height: 23px;
 
 .sign-up {
     width: 100%;
-    height: 50vh;
+    height: auto;
     background: rgba(255, 255, 255, 0.9);
     border-top: 5px solid #0128AD;
     margin-top: 120px;
@@ -740,4 +740,110 @@ line-height: 23px;
 .sign-up > hr {
     color: #0128AD;
     margin: 0!important;
+}
+
+.main-signup {
+    margin-top: 10px!important;
+    padding: 10px 60px!important;
+}
+
+.main-signup > h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #001048;
+}
+
+.first-sign-line {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+.first-sign-line > input {
+    height: 40px;
+    outline: none;
+}
+.second-sign-line input {
+    height: 40px;
+    outline: none;
+}
+.third-sign-line {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+.third-sign-line > input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+
+.fourth-sign-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourth-sign-line .verify-human {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 40px;
+    background: #EFEFEF;
+    border: 1px solid #000000;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.verify-human> h6 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 35px;
+    margin-left: 0!important;
+}
+.verify-human > input {
+    width: 18px;
+    height: 18px;
+}
+
+.verify-human > i {
+    font-size: 20px;
+}
+
+.signup-submit a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #2948B0;
+    padding: 5px 30px;
+}
+.goog-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 20px;
+}
+.goog-app a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px 30px;
+}
+
+.goog-app > a:nth-child(1) {
+    background-color: #FF4F4F;
+}
+.goog-app > a:nth-child(2) {
+    background-color: #333333;
 }

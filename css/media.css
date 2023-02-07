@@ -365,6 +365,18 @@
         .first-style-footer > div:nth-child(3) > ul > li:nth-child(1) > a{
             font-size: 20px;
         }
+
+        /* sign up */
+        .goog-app {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .goog-app > a {
+            padding: 5px 70px;
+        }
+        .verify-human {
+            width: 300px!important;
+        }
 }
 
 /* For Ipads, Tablets */
