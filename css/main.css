@@ -278,3 +278,12 @@ text-shadow: 0px 4px 10px #000000;
     font-size: 36px;
     color: #01003D;
 }
+
+/* Cources of website */
+.courses {
+    height: 100vh;
+    background-image: url(../images/courses.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
