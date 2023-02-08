@@ -377,6 +377,19 @@
         .verify-human {
             width: 300px!important;
         }
+
+        .first-sign-line {
+            display: flex;
+            flex-direction: column;
+            column-gap: 50px;
+        }
+
+        .third-sign-line {
+            display: flex;
+            flex-direction: column;
+            column-gap: 50px;
+            row-gap: 20px;
+        }
 }
 
 /* For Ipads, Tablets */
@@ -615,6 +628,19 @@
         }
         .email-updates a {
             padding: 5px 20px;
+        }
+
+        .first-sign-line {
+            display: flex;
+            flex-direction: column;
+            column-gap: 50px;
+        }
+
+        .third-sign-line {
+            display: flex;
+            flex-direction: column;
+            column-gap: 50px;
+            row-gap: 20px;
         }
 }
 
