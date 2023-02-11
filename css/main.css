@@ -813,7 +813,8 @@ line-height: 23px;
     font-size: 20px;
 }
 
-.signup-submit a{
+.signup-submit button {
+    border: none;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -822,7 +823,7 @@ line-height: 23px;
     color: #FFFFFF;
     text-decoration: none;
     background: #2948B0;
-    padding: 5px 30px;
+    padding: 0px 30px;
 }
 .goog-app {
     display: flex;
@@ -831,7 +832,8 @@ line-height: 23px;
     column-gap: 50px;
     margin-bottom: 20px;
 }
-.goog-app a{
+.goog-app > button{
+    border: none;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -841,9 +843,14 @@ line-height: 23px;
     padding: 5px 30px;
 }
 
-.goog-app > a:nth-child(1) {
+.goog-app > button:nth-child(1) {
     background-color: #FF4F4F;
 }
-.goog-app > a:nth-child(2) {
+.goog-app > button:nth-child(2) {
     background-color: #333333;
+}
+
+.login-line input:nth-child(2){
+    width: 100%;
+    padding: 5px 10px;
 }

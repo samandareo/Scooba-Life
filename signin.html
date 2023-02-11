@@ -96,8 +96,8 @@
                             <div class="col main-signup">
                                 <h4>Don't have an account? <a href="https://scuba-life.netlify.app/signup.html" style="text-decoration: none;">Create an account</a></h4>
                                 <div class="login-line">
-                                    <input type="text" placeholder="Email or username" style="height: 40px;">
-                                    <input type="text" placeholder="Password" style="height: 40px;">
+                                    <input type="text" placeholder="Email" id="sign-email" style="height: 40px;">
+                                    <input type="password" placeholder="Password" id="sign-pass" style="height: 40px;">
                                 </div>
                                 <div class="fourth-sign-line">
                                     <div class="verify-human">
@@ -106,13 +106,13 @@
                                         <i class="bi bi-robot"></i>
                                     </div>
                                     <div class="signup-submit mt-2">
-                                        <a href="#">CREATE ACCOUNT</a>
+                                        <button id="signData">SIGN IN</button>
                                     </div>
                                     <a href="#" style="text-decoration: none;">Forgot password?</a>
                                     <h6 class="mt-1">OR</h6>
                                     <div class="goog-app">
-                                        <a href="https://account.google.com/"><i class="bi bi-google"></i> GOOGLE</a>
-                                        <a href="https://appleid.apple.com/"><i class="bi bi-apple"></i> APPLE ID</a>
+                                        <button id="signGoogle"><i class="bi bi-google"></i> GOOGLE</button>
+                                        <button><i class="bi bi-apple"></i> APPLE ID</button>
                                     </div>
                                 </div>
                             </div>
@@ -181,4 +181,85 @@
 <script src="./js/index.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider  } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+    import { getDatabase,update, ref } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+
+
+
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCaoAXRdqf7rz2cpUZEr6xOKDrLRhZqTpk",
+      authDomain: "scooba-c4ad3.firebaseapp.com",
+      projectId: "scooba-c4ad3",
+      databaseURL: "https://scooba-c4ad3-default-rtdb.firebaseio.com",
+      storageBucket: "scooba-c4ad3.appspot.com",
+      messagingSenderId: "1088136109045",
+      appId: "1:1088136109045:web:96b0ce26b9262a2b42debc",
+      measurementId: "G-JBCSESJ59D"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const database = getDatabase();
+    const provider = new GoogleAuthProvider();
+
+    signData.addEventListener('click', (e) =>{
+
+        var email = document.getElementById('sign-email').value;
+        var password = document.getElementById('sign-pass').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+
+                var lgDate = new Date();
+                update(ref(database, 'users/' + user.uid), {
+                    last_login: lgDate
+                }).then(() => {
+                    alert("You logged in successfully!");
+                    })
+                    .catch((error) => {
+                    alert(error);
+                    }); 
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+        });
+    });
+    signGoogle.addEventListener('click', (a)=> {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                // IdP data available using getAdditionalUserInfo(result)
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+                alert(errorMessage);
+            });
+    });
+
+    const analytics = getAnalytics(app);
+    </script>
 </html>
