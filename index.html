@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="home" id="home">
-        <div class="local-navbar">
+        <div class="local-navbar" style="z-index: 9999;">
             <div class="first-section">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
@@ -87,13 +88,13 @@
         </div>
         <div class="container home-content">
             <div class="row row-cols-1 m-auto">
-                <div class="col" style="margin-top: 150px;">
+                <div class="col" style="margin-top: 150px;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h1 class="text-light text-center " style="font-size: 90px; font-weight: 600; line-height: 106.5%; text-shadow: 0px 4px 15px rgba(78, 75, 75, 0.4);">CHANGE YOUR LIVES TOGETHER THIS YEAR</h1>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h6 class=" text-light text-center" style="font-size: 34px; text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25); line-height: 49px; font-weight: 400;">Discover a new world of diving with us. We offer you our quality, useful and effective courses.</h6>
                 </div>
-                <div class="col mt-5 d-flex justify-content-center">
+                <div class="col mt-5 d-flex justify-content-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <a href="#services" class="btn-diving shadow p-3 mb-5 rounded">START DIVING</a>
                 </div>
             </div>
@@ -105,13 +106,13 @@
     <div class="services" id="services">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h1>OUR SERVICES AND PRODUCTS</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="shadow services-content">
+                    <div class="shadow services-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <div class="row">
                             <div class="col">
                                 <ul>
@@ -134,15 +135,15 @@
                 </div>
             </div>
             <div class="row row-cols-1 mt-5">
-                <div class="col"><h4>GENERAL DIVING ADVICES AND HELPS...</h4></div>
-                <div class="col d-flex"><a href="#advices" class="">SCROLL DOWN</a></div>
+                <div class="col" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"><h4>GENERAL DIVING ADVICES AND HELPS...</h4></div>
+                <div class="col d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"><a href="#advices" class="">SCROLL DOWN</a></div>
             </div>
         </div>
     </div>
     <div class="advices" id="advices">
         <div class="container-fluid">
             <div class="row">
-                <div class="label-content">
+                <div class="label-content" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class="col">
                     <div class="advice-photo">
                         <img src="./images/advices-mini.png" alt="">
@@ -159,14 +160,14 @@
     <div class="courses" id="courses">
         <div class="container-fluid">
             <div class="container title-container">
-             <div class="row row-cols-1">
+             <div class="row row-cols-1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
                 <div class="col mt-5"><h1>OUR COURSES</h1></div>
                 <div class="col"><h6>You can choose the package you like. If you want to edit the packages at your convenience, you can use the pen!</h6></div>
              </div>   
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col mb-5 mt-5">
+                    <div class="col mb-5 mt-5" data-aos="flip-left" data-aos-duration="800">
                         <div class="course-card m-auto">
                             <div class="course-title">
                                 <h1>BEGINNER</h1>
@@ -185,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5 mt-5">
+                    <div class="col mb-5 mt-5" data-aos="flip-left" data-aos-duration="800">
                         <div class="course-card m-auto">
                             <div class="course-title">
                                 <h1>INTERMEDIATE</h1>
@@ -204,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5 mt-5 m-auto">
+                    <div class="col mb-5 mt-5 m-auto" data-aos="flip-left" data-aos-duration="800">
                         <div class="course-card m-auto">
                             <div class="course-title">
                                 <h1>ADVANCED</h1>
@@ -231,7 +232,7 @@
                 <div class="container about-container">
                     <div class="row">
                         <div class="col">
-                            <div class="content-back">
+                            <div class="content-back" data-aos="fade-up">
                                 <div class="row">
                                     <div class="col">
                                         <h1>It's all about us!
@@ -260,7 +261,7 @@
             <div class="col-lg-7">
                 <div class="row row-cols-1 contact-contentfix">
                     <div class="col">
-                        <div class="contact-first">
+                        <div class="contact-first" data-aos="fade-right">
                             <div class="contact-title mt-3">
                                 <h1>CONTACT US</h1>
                             </div>
@@ -293,7 +294,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="contact-second">
+                        <div class="contact-second" data-aos="fade-right">
                             <div class="contact-mail">
                                 <h6>scoobalifepartner@gmail.com
                                 </h6>
@@ -368,7 +369,7 @@
                     <div class="email-updates">
                     <h3>Email Updates</h3>
                     <p>Get 10% off eLearning online! Sign up and get the latest updates, offers and more.</p>
-                    <a href="https://scuba-life/signup.html">SIGN UP (AND SAVE!)</a>
+                    <a href="https://scuba-life.netlify.app/signup.html">SIGN UP (AND SAVE!)</a>
                     </div>
                     <div class="social-medias">
                         <a href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
@@ -404,5 +405,9 @@
    (function(){
       emailjs.init("wpb7u0iaLw1slddhO");
    })();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 </html>
