@@ -24,3 +24,7 @@ function send(params) {
       });
   
 }
+
+function viewMsg() {
+  alert("Sorry, We haven't Apple developer certificate! It is 99$ :) You can donate if you want) ");
+}
