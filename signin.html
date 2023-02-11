@@ -108,7 +108,29 @@
                                     <div class="signup-submit mt-2">
                                         <button id="signData">SIGN IN</button>
                                     </div>
-                                    <a href="#" style="text-decoration: none;">Forgot password?</a>
+                                    <button type="button" style="border:none; background: none; color: blue;" data-toggle="modal" data-target="#ForgotPassModal">Forgot password?</button>
+
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="ForgotPassModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Reset password</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <input type="email" placeholder="Email">
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary">Reset</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
                                     <h6 class="mt-1">OR</h6>
                                     <div class="goog-app">
                                         <button id="signGoogle"><i class="bi bi-google"></i> GOOGLE</button>
