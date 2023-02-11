@@ -320,10 +320,10 @@
                       <input type="text" class="form-control" id="name" placeholder="Name">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Topic">
+                        <input type="text" class="form-control" id="topic" placeholder="Topic">
                       </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="name" placeholder="Email">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
                       </div>
                     <div class="mb-3">
                       <textarea class="form-control" id="message-text" placeholder="Comment" style="height: 100px;"></textarea>
@@ -331,7 +331,7 @@
                   </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="local-modal-send">SUBMIT</button>
+                  <button type="button" class="local-modal-send" onclick="send()">SUBMIT</button>
                 </div>
               </div>
             </div>
@@ -396,4 +396,13 @@
 <script src="./js/index.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
+<script 
+        type="text/javascript" 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("wpb7u0iaLw1slddhO");
+   })();
+</script>
 </html>
