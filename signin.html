@@ -300,7 +300,7 @@
         sendPasswordResetEmail(auth, email)
         .then(() => {
             alert("The recovery password has been sent to your email!");
-            window.location.href = "https://scuba-life.netlify.app/sigin.html";
+            window.location.href = "https://scuba-life.netlify.app/signin.html";
         })
         .catch((error) => {
             const errorCode = error.code;
