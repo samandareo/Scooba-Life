@@ -12,8 +12,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Pre-loader spinner -->
+    <div class="preloader-wrapper">
+        <div class="spinner-grow text-primary" style="width: 3rem;height: 3rem;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- Pre-loader spinner -->
+
     <div class="home" id="home">
-        <div class="local-navbar" style="z-index: 9999;">
+        <div class="local-navbar" style="z-index: 1;">
             <div class="first-section">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
@@ -397,6 +405,7 @@
 <script src="./js/index.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script 
         type="text/javascript" 
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -409,5 +418,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
 </script>
 </html>
